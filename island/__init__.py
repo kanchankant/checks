@@ -18,7 +18,7 @@ def IslandX():
     islandx = [[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]
     for i in islandx:
         for j in i:
-            p.stdin(str(j));
+            p.stdin(j);
     p.stdout(10)
     p.exit(0)
 
