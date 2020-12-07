@@ -7,12 +7,7 @@ def exists():
     check50.exists("island.c")
 
 @check50.check(exists)
-@check50.check()
-def exists2():
-    """islandmain.c exists."""
-    check50.exists("islandmain.c")
 
-@check50.check(exists2)
 @check50.check()
 def compiles():
     """island.c compiles."""
