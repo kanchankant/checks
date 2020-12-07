@@ -19,7 +19,7 @@ def IslandX():
     for i in islandx:
         for j in i:
             p.stdin(str(j))
-    p.stdout(0)
+    p.stdout(str(0))
     p.exit(0)
 
 @check50.check(compiles)
