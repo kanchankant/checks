@@ -25,4 +25,19 @@ def islandTest(island, answer):
 def island_x():
     """Test Island X"""
     islandx = [[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]
-    islandTest(islandx, 1)
+    islandTest(islandx, 20)
+    
+def island_y():
+    """Test Island Y"""
+    islandy = [[1,1,1,1,1],[1,1,1,1,1],[1,0,0,1,1],[1,0,0,1,1],[1,1,1,0,0]]
+    islandTest(islandy,28)
+    
+def island_z():
+    """Test Island Z"""
+    islandz = [[0,0,0,0,0],[0,1,1,0,0],[1,1,1,0,0],[0,1,1,1,0],[0,0,1,1,1]]
+    islandTest(islandz,18)
+
+def island_w():
+    """Test Island W"""
+    islandw = [[0,0,0,0,0],[1,0,0,1,1],[1,0,0,0,1],[1,1,0,0,1],[0,1,1,1,1]]
+    islandTest(islandw,28)
