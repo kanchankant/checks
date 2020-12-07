@@ -14,12 +14,12 @@ def compiles():
 
 def IslandX():
     """Tests IslandX"""
-    p = check50.run("./islandmain");
+    p = check50.run("./islandmain")
     islandx = [[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]
-    for i in islandx:
-        for j in i:
-            p.stdin(str(j))
-    p.stdout(10)
+    #for i in islandx:
+        #for j in i:
+            #p.stdin(str(j))
+    #p.stdout(10)
     p.exit(0)
 
 @check50.check(compiles)
