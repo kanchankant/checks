@@ -12,17 +12,17 @@ def compiles():
     check50.include("island.h", "islandmain.c")
     check50.c.compile("islandmain.c", "island.c", lcs50=True)
 
-def IslandX():
+def islandTest(island, answer):
     """Tests IslandX"""
     p = check50.run("./islandmain")
-    islandx = [[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]
-    for i in islandx:
+    for i in island:
         for j in i:
             p.stdin(str(j))
-    p.stdout(str(1))
+    p.stdout(str(answer))
     p.exit(0)
 
 @check50.check(compiles)
-def sort_reversed():
-    """sorts {5,4,3,2,1}"""
-    IslandX()
+def island_x():
+    """Test Island X"""
+    islandx = [[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]
+    islandTest(islandx, 1)
