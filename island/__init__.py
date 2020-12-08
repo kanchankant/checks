@@ -30,7 +30,7 @@ def island_x():
 @check50.check(compiles)
 def island_y():
     """Test Island Y"""
-    islandy = [[1,1,1,1,1],[1,1,1,1,1],[1,0,0,1,1],[1,0,0,1,1],[1,1,1,0,0]]
+    islandy = [[1,1,1,1,1],[1,1,1,1,1],[1,0,0,1,1],[1,0,0,0,1],[1,1,1,0,0]]
     islandTest(islandy,28)
 
 @check50.check(compiles)
@@ -43,4 +43,4 @@ def island_z():
 def island_w():
     """Test Island W"""
     islandw = [[0,0,0,0,0],[1,0,0,1,1],[1,0,0,0,1],[1,1,0,0,1],[0,1,1,1,1]]
-    islandTest(islandw,28)
+    islandTest(islandw,26)
